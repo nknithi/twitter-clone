@@ -1,0 +1,136 @@
+/* Reset padding and margin for body and html */
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Container for the home page */
+.home-container {
+
+  display: flex;
+  min-height: 100vh;
+  /* Full viewport height */
+}
+
+/* Sidebar styling for the home page */
+.home-sidebar {
+  flex: 0 0 15%;
+  /* Fixed width of 15% */
+  background-color: rgb(12, 53, 53);
+  /* Dark teal background */
+}
+
+/* Main content area styling for the home page */
+.home-content {
+  flex: 1;
+  /* Take up remaining space */
+
+}
+
+/* Profile menu item styling */
+.menu-item-profile {
+  background-color: #104545ff;
+  /* Darker teal background */
+}
+
+/* Styling for menu item links */
+.menu-item-link {
+  color: whitesmoke;
+  /* Light color for text */
+
+}
+
+/* Hover and focus states for menu items */
+.menu-item:hover,
+.menu-item:focus {
+  background-color: #104545ff;
+  /* Darker teal background */
+  color: white;
+  /* White text */
+  border-radius: 8px;
+  /* Rounded corners */
+
+}
+
+/* Visited state for menu items */
+.menu-item:visited {
+  background-color: #104545ff;
+  /* Darker teal background */
+  color: white;
+  /* White text */
+}
+
+
+
+/* Active state for menu items */
+.menu-item:active {
+
+  border-radius: 8px;
+  /* Rounded corners */
+  color: white;
+  /* White text */
+}
+
+
+
+/* Remove default list styling from menu */
+.menu {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Styling for login/register buttons */
+.login-register-button {
+  background-color: #104545ff;
+  /* Darker teal background */
+
+}
+
+/* Hover state for login/register buttons */
+.login-register-button:hover {
+  background-color: rgb(12, 53, 53);
+  /* Even darker teal background */
+}
+
+/* Styling for forgot password link */
+.forgot-password {
+  text-decoration: none;
+  /* Remove underline */
+  color: blue;
+  /* Blue text */
+}
+
+
+/* Custom classes for responsive border radius */
+@media (max-width: 767.98px) {
+
+  /* Portrait mode for small devices */
+  .rounded-top-mobile {
+    border-top-left-radius: .45rem !important;
+    border-top-right-radius: .45rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+/* Desktop styling for rounded corners */
+@media (min-width: 768px) {
+  .rounded-start-desktop {
+    border-top-left-radius: .45rem !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: .45rem !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+/* Add specific styling for landscape mode on small devices */
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .rounded-top-mobile {
+    border-top-left-radius: .45rem !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: .45rem !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}

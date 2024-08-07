@@ -1,0 +1,55 @@
+.card {
+  /* Change cursor to pointer on hover */
+  cursor: pointer;
+}
+
+.card-body {
+  /* Padding around card body content */
+  padding: 1rem;
+  /* Border around card body */
+  border: 1px solid #ccc;
+}
+
+.card-body:hover {
+  /* Light background color on hover */
+  background-color: #eaf1f8;
+}
+
+.text-muted {
+  /* Default muted text color */
+  color: #6c757d;
+}
+
+.text-muted:hover {
+  /* Darker text color on hover */
+  color: #495057;
+}
+
+.username-link {
+  /* Remove underline from username links */
+  text-decoration: none;
+  ;
+  /* Default link color */
+  color: black;
+  /* Smooth transition for color change */
+  transition: color 0.15s ease-in-out;
+}
+
+.username-link:hover {
+  /* Underline username links on hover */
+  text-decoration: underline;
+}
+
+.btn-link {
+  /* Default link color for button links */
+  color: #007bff;
+  /* Remove underline from button links */
+  text-decoration: none;
+  /* Smooth transition for color change */
+  transition: color 0.15s ease-in-out;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+  /* Darker shade of blue on hover */
+}
